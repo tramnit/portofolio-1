@@ -62,12 +62,23 @@ My Resume
 </div>
 </div>
 
-<div class="relative">
-<div class="absolute w-[300px] h-[360px] bg-gradient-to-r from-blue-700/30 to-red-500/0 rounded-full -top-5"></div>
+<div class="relative flex justify-center">
 
-<img src="potoprofil.jpeg"
-class="relative w-[230px] md:w-[300px] rounded-full hover:scale-105 hover:shadow-[0_0_20px_rgba(78,168,255,0.5)] transition">
+  <!-- Background glow -->
+  <div class="absolute w-[300px] h-[360px] 
+              bg-gradient-to-r from-blue-700/30 to-red-500/0 
+              rounded-full -top-5 blur-2xl">
+  </div>
+
+  <!-- Foto -->
+  <img src="potoprofil.jpeg"
+       class="relative w-[230px] md:w-[300px] rounded-full 
+              transition duration-500 ease-out
+              hover:-translate-y-4
+              hover:scale-105 
+              hover:shadow-[0_0_25px_rgba(78,168,255,0.6)]">
 </div>
+
 
 </section>
 
