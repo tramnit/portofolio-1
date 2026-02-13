@@ -8,83 +8,110 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-
-<body class="bg-[#0a0f24] text-white font-sans scroll-smooth">
+  <body class="bg-[#0a0f24] text-white font-sans">
 
 <!-- ================= HEADER ================= -->
-<header class="bg-[#0d1331] border-b border-[#1b2a52]">
+    <header class="bg-[#0d1331] border-b border-[#1b2a52]">
+      <div class="max-w-6xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-4">
+        <h1 class="text-2xl font-bold">TRAMNIT</h1>
+          <nav class="space-x-4 text-gray-400 text-sm font-medium">
+            <a href="#home" class="hover:text-[#4ea8ff] transition">Home</a>
+            <a href="#about" class="hover:text-[#4ea8ff] transition">About</a>
+            <a href="#skills" class="hover:text-[#4ea8ff] transition">Skills</a>
+            <a href="#projects" class="hover:text-[#4ea8ff] transition">Projects</a>
+            <a href="#contact" class="hover:text-[#4ea8ff] transition">Contact</a>
+          </nav>
+      </div>
+    </header> 
 
-<div class="max-w-6xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-4">
+   <!-- ================= HERO ================= -->
+<section id="home"
+class="relative overflow-hidden bg-[#0a0f24]">
 
-<h1 class="text-2xl font-bold">Muhammad Rassya</h1>
+  <div class="max-w-6xl mx-auto px-6 py-28
+              flex flex-col-reverse md:flex-row
+              items-center justify-between gap-16">
 
-<nav class="space-x-8">
-<a href="#home" class="hover:text-[#4ea8ff] transition">Home</a>
-<a href="#about" class="hover:text-[#4ea8ff] transition">About</a>
-<a href="#skills" class="hover:text-[#4ea8ff] transition">Skills</a>
-<a href="#projects" class="hover:text-[#4ea8ff] transition">Projects</a>
-<a href="#contact" class="hover:text-[#4ea8ff] transition">Contact</a>
-</nav>
+    <!-- ========= LEFT CONTENT ========= -->
+    <div class="md:w-1/2 text-center md:text-left">
 
-</div>
-</header>
+      <h3 class="text-lg text-gray-400 mb-4 tracking-widest uppercase">
+        Introduction
+      </h3>
+
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+        MUHAMMAD <br>
+        <span class="text-[#79baff]">RASSYA</span>
+      </h1>
+
+      <h2 class="text-2xl md:text-3xl font-semibold text-gray-300 mb-6">
+        <span id="typing-text"></span>
+        <span class="animate-pulse text-[#4ea8ff]">|</span>
+      </h2>
+
+      <p class="text-gray-400 max-w-lg mb-8">
+        Frontend Developer focused on building modern,
+        responsive, and high-performance web applications
+        with clean UI and strong user experience.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        <a href="mailto:muhammadrassya123@gmail.com"
+           class="bg-[#4ea8ff] px-6 py-3 rounded-lg font-semibold
+                  hover:scale-105 hover:shadow-[0_0_20px_rgba(78,168,255,0.4)]
+                  transition duration-300">
+          Hire Me
+        </a>
+
+        <a href="https://www.linkedin.com/in/muhammad-rassya-khanaya-hartawan-65668229b/"
+           target="_blank"
+           class="border border-[#4ea8ff] text-[#4ea8ff] px-6 py-3 rounded-lg font-semibold
+                  hover:bg-[#4ea8ff] hover:text-[#0a0f24]
+                  transition duration-300">
+          View Resume
+        </a>
+      </div>
+
+    </div>
 
 
-<!-- ================= HERO ================= -->
-<section id="home" class="max-w-6xl mx-auto px-6 py-24 flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+<!-- ========= RIGHT IMAGE ========= -->
+<div class="relative md:w-1/2 flex justify-center group">
 
-<div class="text-center md:text-left">
-
-<h3 class="text-xl font-semibold">
-Hello<span class="text-[#5f84ff] text-3xl">.</span>
-</h3>
-
-<h1 class="text-4xl md:text-6xl font-extrabold my-4">
-I’m <span class="text-[#79baff]">Muhammad Rassya</span>
-</h1>
-
-<h2 class="text-2xl md:text-3xl font-bold text-gray-300">
-Front End Developer
-</h2>
-
-<div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-
-<a href="#contact"
-class="bg-[#4ea8ff] px-6 py-3 rounded-lg font-semibold hover:scale-105 transition">
-Hire Me
-</a>
-
-<a href="#"
-class="border-2 border-[#4ea8ff] text-[#4ea8ff] px-6 py-3 rounded-lg font-semibold hover:bg-[#4ea8ff] hover:text-[#0a0f24] transition">
-My Resume
-</a>
-
-</div>
-</div>
-
-<div class="relative flex justify-center">
-
-  <!-- Background glow -->
-  <div class="absolute w-[300px] h-[360px] 
-              bg-gradient-to-r from-blue-700/30 to-red-500/0 
-              rounded-full -top-5 blur-2xl">
+  <!-- Glow Background -->
+  <div class="absolute w-[350px] md:w-[500px] h-[350px] md:h-[500px]
+              bg-gradient-to-br from-[#4ea8ff]/30 to-transparent
+              rounded-[40%] blur-3xl">
   </div>
 
-  <!-- Foto -->
-  <img src="potoprofil.jpeg"
-       class="relative w-[230px] md:w-[300px] rounded-full 
-              transition duration-500 ease-out
-              hover:-translate-y-4
-              hover:scale-105 
-              hover:shadow-[0_0_25px_rgba(78,168,255,0.6)]">
-</div>
+  <!-- Image Wrapper -->
+  <div class="relative">
 
+    <!-- FOTO -->
+    <img src="potoprofil.jpeg"
+         class="w-[280px] md:w-[420px]
+                object-cover
+                drop-shadow-2xl
+                transition duration-500">
+
+    <!-- OVERLAY WARNA -->
+    <div class="absolute inset-0
+                bg-[#0a0f24]
+                opacity-0
+                group-hover:opacity-70
+                transition duration-500">
+    </div>
+  </div>
+</div>
 
 </section>
 
 
+
 <!-- ================= ABOUT ================= -->
-<section id="about" class="max-w-5xl mx-auto px-6 py-20 text-center">
+<section id="about"class="animate max-w-5xl mx-auto px-6 py-20 text-center
+opacity-0 translate-y-16
+transition-all duration-700 ease-out">
 
 <h2 class="text-3xl font-bold text-[#79baff] mb-6">About Me</h2>
 
@@ -130,7 +157,9 @@ dan backend sederhana. Fokus pada kualitas kode, UX, dan optimasi performa.
 
 
 <!-- ================= SKILLS ================= -->
-<section id="skills" class="max-w-5xl mx-auto px-6 py-20 text-center">
+<section id="skills" class="animate max-w-5xl mx-auto px-6 py-20 text-center
+opacity-0 translate-y-16
+transition-all duration-700 ease-out">
 
   <h2 class="text-3xl font-bold text-[#79baff] mb-10">Skills</h2>
 
@@ -189,7 +218,9 @@ dan backend sederhana. Fokus pada kualitas kode, UX, dan optimasi performa.
 
 
 <!-- ================= PROJECTS ================= -->
-<section id="projects" class="max-w-6xl mx-auto px-6 py-20">
+<section id="projects" class="animate max-w-5xl mx-auto px-6 py-20 text-center
+opacity-0 translate-y-16
+transition-all duration-700 ease-out">
 
 <h2 class="text-3xl font-bold text-[#79baff] text-center mb-10">
 Portfolio — Projects
@@ -199,28 +230,35 @@ Portfolio — Projects
 
 <!-- Project -->
 <div class="bg-[#111832] border border-[#22335e] rounded-xl p-5 hover:-translate-y-2 hover:shadow-blue-600/30 transition">
-<img src="OnePiece.png" class="rounded mb-3 w-full">
+  <a href="https://tramnit.github.io/One-piece-wiki-revision/">
+    <img src="OnePiece.png" class="rounded mb-3 w-full">
+  </a>
 <h3 class="font-bold text-lg">Project A</h3>
 <p class="text-gray-300 text-sm">Website bernuansa One Piece</p>
 </div>
 
-<div class="bg-[#111832] border border-[#22335e] rounded-xl p-5 hover:-translate-y-2 hover:shadow-blue-600/30 transition">
-<img src="Portfolio2.png" class="rounded mb-3 w-full">
+<div class="bg-[#111832] border border-[#22335e] rounded-xl p-5 hover:-translate-y-2 hover:shadow-blue-600/30 transition"> <link rel="stylesheet" href="https://kateringku.onrender.com">
+<img src="Portfolio2.png" class="rounded mb-3 w-full" >
 <h3 class="font-bold text-lg">Project B</h3>
 <p class="text-gray-300 text-sm">Portfolio Gear 5 Luffy</p>
 </div>
 
 <div class="bg-[#111832] border border-[#22335e] rounded-xl p-5 hover:-translate-y-2 hover:shadow-blue-600/30 transition">
-<img src="Catering.png" class="rounded mb-3 w-full">
-<h3 class="font-bold text-lg">Project C</h3>
-<p class="text-gray-300 text-sm">Online Catering Shop</p>
+  <a href="https://kateringku.onrender.com" target="_blank">
+    <img src="Catering.png" class="rounded mb-3 w-full">
+  </a>
+     <h3 class="font-bold text-lg">Project C</h3>
+        <p class="text-gray-300 text-sm">Online Catering Shop</p>
 </div>
+
 
 </div>
 
 </section>
 
-<section class="bg-[#0a0f24] py-16 px-6">
+<section id="contact" class="animate max-w-5xl mx-auto px-6 py-20 text-center
+opacity-0 translate-y-16
+transition-all duration-700 ease-out"">
   <div class="max-w-4xl mx-auto text-center">
 
     <!-- Title -->
@@ -235,7 +273,7 @@ Portfolio — Projects
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
 
       <!-- LinkedIn -->
-      <a href="#"
+      <a href="https://www.linkedin.com/in/muhammad-rassya-khanaya-hartawan-65668229b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BsYVdQjd8TC2x%2FTPu5fjDVw%3D%3D"
          class="flex items-center justify-between 
                 bg-[#111832] border border-[#1e2a4a] 
                 px-6 py-4 rounded-xl 
@@ -253,7 +291,7 @@ Portfolio — Projects
       </a>
 
       <!-- Instagram -->
-      <a href="#"
+      <a href="https://www.instagram.com/rassyakha/"
          class="flex items-center justify-between 
                 bg-[#111832] border border-[#1e2a4a] 
                 px-6 py-4 rounded-xl 
@@ -271,7 +309,7 @@ Portfolio — Projects
       </a>
 
       <!-- GitHub -->
-      <a href="#"
+      <a href="https://github.com/tramnit"
          class="flex items-center justify-between 
                 bg-[#111832] border border-[#1e2a4a] 
                 px-6 py-4 rounded-xl 
@@ -320,6 +358,6 @@ Portfolio — Projects
 
 </footer>
 
-
+<script src="script.js"></script>
 </body>
 </html>
